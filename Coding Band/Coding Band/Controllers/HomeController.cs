@@ -12,5 +12,10 @@ namespace Coding_Band.Controllers
         {
             return View();
         }
+
+        public ActionResult Libro()
+        {
+            return View();
+        }
     }
 }

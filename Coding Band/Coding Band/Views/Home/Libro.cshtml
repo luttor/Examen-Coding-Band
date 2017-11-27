@@ -1,0 +1,75 @@
+﻿
+@{
+    ViewBag.Title = "Libro";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Libro</h2>
+
+<section ng-controller="libroController">
+    <div class="row">
+        <div class="col-lg-4">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="email">Nombre Libro:</label>
+                            <input type="text" ng-model="libro.nombre_libro" name="nombre_libro" class="form-control" id="nombre_libro">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Fecha Edicion:</label>
+                            <input type="date" ng-model="libro.fecha_edicion" name="fecha_edicion" class="form-control" id="fecha_edicion">
+                        </div>
+                        <button type="submit" ng-click="save(libro)" class="btn btn-default">Guardar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-8">
+            <div class="panel panel-default">
+                <div class="panel-body">
+                    <table class="table table-condensed">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Nombre Autor</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr ng-repeat="a in autores">
+                                <td>{{a.id_autor}}</td>
+                                <td>{{a.nombre}}</td>
+                                <td>
+                                    <input type="checkbox" name="autores[]" ng-model="libro.autores[a.id_autor]" value="{{a.id_autor}}">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre Libro</th>
+                    <th>Autores</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr ng-repeat="l in libros">
+                    <td>{{l.id_libro}}</td>
+                    <td>{{l.fecha_edicion}}</td>
+                    <td>{{l.autores}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>

@@ -26,7 +26,7 @@ D:\Examen-Coding-Band\Coding Band\Coding Band\bin\Newtonsoft.Json.xml
 D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Net.Http.Formatting.xml
 D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Http.xml
 D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Http.WebHost.xml
-D:\Examen-Coding-Band\Coding Band\Coding Band\obj\Debug\Coding Band.csprojResolveAssemblyReference.cache
 D:\Examen-Coding-Band\Coding Band\Coding Band\obj\Debug\Coding Band.csproj.CoreCompileInputs.cache
 D:\Examen-Coding-Band\Coding Band\Coding Band\obj\Debug\Coding Band.dll
 D:\Examen-Coding-Band\Coding Band\Coding Band\obj\Debug\Coding Band.pdb
+D:\Examen-Coding-Band\Coding Band\Coding Band\obj\Debug\Coding Band.csprojResolveAssemblyReference.cache

@@ -10,5 +10,7 @@ namespace Coding_Band.DAO
         public int id_libro { set; get; }
         public string titulo { set; get; }
         public DateTime fecha_edicion { set; get; }
+
+        public string autores { set; get; }
     }
 }

@@ -40,14 +40,14 @@
     <script>
         var codingBand = angular.module("codingBand", [])
             .constant('CONFIG', {
-                APIURL: "http://localhost:57422/api/Autor/",
+                APIURL: "http://localhost:57422/api/",
             });
 
         codingBand.controller("autorController", function ($scope, $http, CONFIG, $window) {
             $scope.autores = [];
 
             $http({
-                url: CONFIG.APIURL,
+                url: CONFIG.APIURL + "Autor",
                 method: "GET",
                 dataType: "JSON"
             }).then(function (response) {
@@ -58,7 +58,7 @@
             $scope.save = function (autor) {
                 $http({
                     method: 'POST',
-                    url: CONFIG.APIURL + "saveAutor",
+                    url: CONFIG.APIURL + "Autor/saveAutor",
                     data: JSON.stringify(autor.nombre_autor)
                 }).then(function successCallback(response) {
 
@@ -69,6 +69,49 @@
                     console.log(response);
                 });
             };
+        });
+
+        codingBand.controller("libroController", function ($scope, $http, CONFIG, $window) {
+            $scope.autores = [];
+            $scope.libros = [];
+
+            $http({
+                url: CONFIG.APIURL + "Autor",
+                method: "GET",
+                dataType: "JSON"
+            }).then(function (response) {
+                $scope.autores = response.data;
+            }, function (response) {
+                });
+
+            $http({
+                url: CONFIG.APIURL + "Libro",
+                method: "GET",
+                dataType: "JSON"
+            }).then(function (response) {
+                $scope.libros = response.data;
+            }, function (response) {
+            });
+
+            $scope.save = function (libro) {
+                console.log(libro);
+                $http({
+                    method: 'POST',
+                    url: CONFIG.APIURL + "Libro/saveLibro",
+                    data: {
+                        titulo: libro.nombre_libro,
+                        fecha_edicion: libro.fecha_edicion,
+                        autores: JSON.stringify(libro.autores)
+                    }
+                }).then(function successCallback(response) {
+
+                    if (response.data) {
+                        $window.location.reload();
+                    }
+                }, function errorCallback(response) {
+                    console.log(response);
+                });
+            }
         });
     </script>
 </body>
