@@ -1,0 +1,32 @@
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\Coding Band.dll.config
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\Coding Band.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\Coding Band.pdb
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\Dapper.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\Microsoft.Web.Infrastructure.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\Newtonsoft.Json.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Net.Http.Formatting.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Helpers.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Http.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Http.WebHost.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Mvc.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Razor.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Webpages.Deployment.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Webpages.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Webpages.Razor.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\Dapper.xml
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Razor.xml
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Webpages.xml
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Webpages.Deployment.xml
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Webpages.Razor.xml
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Helpers.xml
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Mvc.xml
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\Newtonsoft.Json.xml
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Net.Http.Formatting.xml
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Http.xml
+D:\Examen-Coding-Band\Coding Band\Coding Band\bin\System.Web.Http.WebHost.xml
+D:\Examen-Coding-Band\Coding Band\Coding Band\obj\Debug\Coding Band.csprojResolveAssemblyReference.cache
+D:\Examen-Coding-Band\Coding Band\Coding Band\obj\Debug\Coding Band.csproj.CoreCompileInputs.cache
+D:\Examen-Coding-Band\Coding Band\Coding Band\obj\Debug\Coding Band.dll
+D:\Examen-Coding-Band\Coding Band\Coding Band\obj\Debug\Coding Band.pdb

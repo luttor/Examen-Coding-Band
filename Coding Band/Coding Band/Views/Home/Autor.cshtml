@@ -1,0 +1,38 @@
+﻿
+@{
+    ViewBag.Title = "Autor";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Autor</h2>
+<section ng-controller="autorController">
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <form>
+                <div class="form-group">
+                    <label for="email">Nombre Autor:</label>
+                    <input type="text" ng-model="autor.nombre_autor" name="nombre_autor" class="form-control" id="nombre_autor">
+                </div>
+                <button type="submit" ng-click="save(autor)" class="btn btn-default">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <div>
+        <table class="table table-condensed">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Nombre Autor</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr ng-repeat="a in autores">
+                    <td>{{a.id_autor}}</td>
+                    <td>{{a.nombre}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
