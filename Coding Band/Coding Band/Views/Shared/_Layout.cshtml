@@ -96,7 +96,20 @@
             });
 
             $scope.save = function (libro) {
-                console.log(libro);
+                //if (!libro.hasOwnProperty('autores')){
+                //    $window.alert('Debe Elegir al Menos un Autor...');
+                //    $window.location.reload();
+
+                //    return;
+                //}
+
+                //if (!angular.isDate(libro.fecha_edicion)){
+                //    $window.alert('Seleccione una Fecha');
+                //    $window.location.reload();
+
+                //    return;
+                //}
+
                 $http({
                     method: 'POST',
                     url: CONFIG.APIURL + "Libro/saveLibro",
