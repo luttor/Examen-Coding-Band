@@ -43,7 +43,7 @@
                                 <td>{{a.id_autor}}</td>
                                 <td>{{a.nombre}}</td>
                                 <td>
-                                    <input type="checkbox" name="autores[]" ng-model="libro.autores[a.id_autor]" value="{{a.id_autor}}">
+                                    <input class="form-control" type="checkbox" name="autores[]" ng-model="libro.autores[a.id_autor]" value="{{a.id_autor}}">
                                 </td>
                             </tr>
                         </tbody>
@@ -54,6 +54,21 @@
     </div>
 
     <div>
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <h3>Busqueda</h3>
+                <table class="table table-condensed">
+                    <tr>
+                        <td>
+                            <input class="form-control" type="text" ng-model="f.titulo" placeholder="[Titulo del Libro]">
+                        </td>
+                        <td>
+                            <input class="form-control" type="text" ng-model="f.autores" placeholder="[Autores]">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
         <table class="table table-condensed">
             <thead>
                 <tr>
@@ -65,7 +80,7 @@
             </thead>
 
             <tbody>
-                <tr ng-repeat="l in libros">
+                <tr ng-repeat="l in libros | filter: f">
                     <td>{{l.id_libro}}</td>
                     <td>{{l.titulo}}</td>
                     <td>{{l.fecha_edicion}}</td>
