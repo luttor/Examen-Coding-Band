@@ -19,14 +19,15 @@ namespace Coding_Band.Models
 
         public List<Libro> getAll()
         {
-            return Query<Libro>(@"select l.id_libro, l.titulo,l.fecha_edicion,
+            return Query<Libro>(@"select dat.* from (select l.titulo,l.fecha_edicion,
+                                    (select count(id_libro) from autor_libro where id_libro = l.id_libro group by id_libro) as cantidadAutores,
                                     (SELECT STUFF(
                                         (SELECT ', ' + a.nombre
                                             FROM autor_libro al
                                             inner join autor a on al.id_autor = a.id_autor
                                             where al.id_libro = l.id_libro
                                      FOR XML PATH('')) , 1, 1, '')) as autores
-                                from libro l");
+                                from libro l) dat order by dat.titulo, dat.fecha_edicion, dat.cantidadAutores");
         }
 
         public bool save(Libro l)

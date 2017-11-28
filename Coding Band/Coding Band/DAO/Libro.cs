@@ -12,5 +12,6 @@ namespace Coding_Band.DAO
         public DateTime fecha_edicion { set; get; }
 
         public string autores { set; get; }
+        public int cantidadAutores { set; get; }
     }
 }
