@@ -19,7 +19,14 @@ namespace Coding_Band.Models
 
         public List<Libro> getAll()
         {
-            return Query<Libro>("select * from libro");
+            return Query<Libro>(@"select l.id_libro, l.titulo,l.fecha_edicion,
+                                    (SELECT STUFF(
+                                        (SELECT ', ' + a.nombre
+                                            FROM autor_libro al
+                                            inner join autor a on al.id_autor = a.id_autor
+                                            where al.id_libro = l.id_libro
+                                     FOR XML PATH('')) , 1, 1, '')) as autores
+                                from libro l");
         }
 
         public bool save(Libro l)
@@ -45,6 +52,7 @@ namespace Coding_Band.Models
                         try
                         {
                             Execute("insert into autor_libro values(@id_autor, @id_libro)", new { id_autor, id_libro });
+                            status = true;
                         }
                         catch (Exception e)
                         {

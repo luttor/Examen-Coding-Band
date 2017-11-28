@@ -58,7 +58,8 @@
             <thead>
                 <tr>
                     <th>#</th>
-                    <th>Nombre Libro</th>
+                    <th>Titulo</th>
+                    <th>Fecha Edicion</th>
                     <th>Autores</th>
                 </tr>
             </thead>
@@ -66,6 +67,7 @@
             <tbody>
                 <tr ng-repeat="l in libros">
                     <td>{{l.id_libro}}</td>
+                    <td>{{l.titulo}}</td>
                     <td>{{l.fecha_edicion}}</td>
                     <td>{{l.autores}}</td>
                 </tr>
